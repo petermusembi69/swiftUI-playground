@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var networkingManager = Networkingmanager()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(networkingManager.dataList) {
+            data in
+            Text(data.title).font(.title)
+                .foregroundColor(.gray)
+        }
     }
 }
 

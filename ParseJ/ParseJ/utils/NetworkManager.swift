@@ -13,7 +13,7 @@ class Networkingmanager : ObservableObject {
     
     
     init() {
-        guard let url = URL(string: "https://jsonplaceholder/posts") else {return}
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else {return}
         
         URLSession.shared.dataTask(with: url) {
             (data, _, _) in
@@ -23,7 +23,8 @@ class Networkingmanager : ObservableObject {
             
             DispatchQueue.main.async {
                 self.dataList = dataList
-                print(self.dataList	)
             }
         }.resume()
+    }
+    
 }
