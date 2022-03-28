@@ -12,11 +12,14 @@ struct ContentView: View {
     @ObservedObject var networkManager = NetworkingManager()
     
     var body: some View {
+        NavigationView {
         List(networkManager.dataList.features, id: \.properties) {
             quake in
-            CellRow(quakeFeatures: quake)
+            NavigationLink(destination:Text("Hello")) {
+                CellRow(quakeFeatures: quake)
+            }
+          }
         }
-        
     }
 }
 
