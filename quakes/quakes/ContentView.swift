@@ -15,9 +15,9 @@ struct ContentView: View {
         NavigationView {
         List(networkManager.dataList.features, id: \.properties) {
             quake in
-            NavigationLink(destination:Text("Hello")) {
+            NavigationLink(destination: QuakeDetails(quakeFeatures: quake)) {
                 CellRow(quakeFeatures: quake)
-            }
+            }.navigationBarTitle("Home")
           }
         }
     }

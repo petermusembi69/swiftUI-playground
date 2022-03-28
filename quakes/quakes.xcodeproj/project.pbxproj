@@ -14,6 +14,7 @@
 		E0B57B1B27F25E9200111D07 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B57B1A27F25E9200111D07 /* NetworkingManager.swift */; };
 		E0B57B1E27F25F4800111D07 /* QuakeDataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B57B1D27F25F4800111D07 /* QuakeDataList.swift */; };
 		E0B57B2127F2632700111D07 /* CellRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B57B2027F2632700111D07 /* CellRow.swift */; };
+		E0B57B2327F2753900111D07 /* QuakeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B57B2227F2753900111D07 /* QuakeDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E0B57B1A27F25E9200111D07 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		E0B57B1D27F25F4800111D07 /* QuakeDataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDataList.swift; sourceTree = "<group>"; };
 		E0B57B2027F2632700111D07 /* CellRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRow.swift; sourceTree = "<group>"; };
+		E0B57B2227F2753900111D07 /* QuakeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				E0B57B2027F2632700111D07 /* CellRow.swift */,
+				E0B57B2227F2753900111D07 /* QuakeDetails.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				E0B57B1B27F25E9200111D07 /* NetworkingManager.swift in Sources */,
 				E0B57B0E27F25E5C00111D07 /* ContentView.swift in Sources */,
+				E0B57B2327F2753900111D07 /* QuakeDetails.swift in Sources */,
 				E0B57B0C27F25E5C00111D07 /* quakesApp.swift in Sources */,
 				E0B57B2127F2632700111D07 /* CellRow.swift in Sources */,
 				E0B57B1E27F25F4800111D07 /* QuakeDataList.swift in Sources */,
