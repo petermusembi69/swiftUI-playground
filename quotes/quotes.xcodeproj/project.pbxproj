@@ -13,6 +13,7 @@
 		E05B81C327F22B9E00FA5DC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05B81B127F22B9D00FA5DC7 /* ContentView.swift */; };
 		E05B81C427F22B9E00FA5DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E05B81B227F22B9E00FA5DC7 /* Assets.xcassets */; };
 		E05B81C527F22B9E00FA5DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E05B81B227F22B9E00FA5DC7 /* Assets.xcassets */; };
+		E05B81D127F238CA00FA5DC7 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05B81D027F238CA00FA5DC7 /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E05B81B727F22B9E00FA5DC7 /* quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05B81BD27F22B9E00FA5DC7 /* quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05B81BF27F22B9E00FA5DC7 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E05B81D027F238CA00FA5DC7 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,8 @@
 		E05B81AF27F22B9D00FA5DC7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E05B81CF27F238B400FA5DC7 /* Data */,
+				E05B81CE27F238A300FA5DC7 /* Model */,
 				E05B81B027F22B9D00FA5DC7 /* quotesApp.swift */,
 				E05B81B127F22B9D00FA5DC7 /* ContentView.swift */,
 				E05B81B227F22B9E00FA5DC7 /* Assets.xcassets */,
@@ -76,6 +80,21 @@
 				E05B81BF27F22B9E00FA5DC7 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		E05B81CE27F238A300FA5DC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E05B81D027F238CA00FA5DC7 /* Quote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E05B81CF27F238B400FA5DC7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E05B81C227F22B9E00FA5DC7 /* ContentView.swift in Sources */,
+				E05B81D127F238CA00FA5DC7 /* Quote.swift in Sources */,
 				E05B81C027F22B9E00FA5DC7 /* quotesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

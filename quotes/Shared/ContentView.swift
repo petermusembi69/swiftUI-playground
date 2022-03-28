@@ -20,11 +20,24 @@ struct ContentView: View {
 }
 
 struct MainView: View {
-    let quotes = ["quote1", "quote2", "quote3","quote4","quote1", "quote2", "quote3","quote4","quote1", "quote2", "quote3","quote4"]
+    var quotes: [Quote] = [
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    Quote(quote: "First Quote, in the beningin, in the benigin, in the beningini", name: "Robert"),
+    ]
+
     var body: some View {
         VStack {
             HStack {
-                Text("Quotes Available")
+                Text("\(self.quotes.count) Quotes Available")
                     .italic()
                     .foregroundColor(.orange)
             }
@@ -35,9 +48,9 @@ struct MainView: View {
                         quote in
                         VStack {
                           CircleImage(imageName: "lilly")
-                            Text(quote)
+                            Text(#" "\#(quote.quote) " "#).font(.headline)
                             Divider()
-                            Text("By Jame Bond").italic()
+                            Text("By - \(quote.name)").italic()
                                 .font(.custom("Poppins", size: 14))
                         }.frame(width: 300, height: 300).foregroundColor(.gray).padding(.all,4).background(.white).cornerRadius(13)
                             .overlay(Rectangle()
