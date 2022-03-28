@@ -11,6 +11,8 @@
 		E023BA5F27EC447600198D36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023BA5E27EC447600198D36 /* ContentView.swift */; };
 		E023BA6127EC447700198D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E023BA6027EC447700198D36 /* Assets.xcassets */; };
 		E023BA6427EC447700198D36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E023BA6327EC447700198D36 /* Preview Assets.xcassets */; };
+		E05B81A627F2294400FA5DC7 /* TBoxImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05B81A527F2294400FA5DC7 /* TBoxImage.swift */; };
+		E05B81A927F22AA500FA5DC7 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05B81A827F22AA500FA5DC7 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E023BA5E27EC447600198D36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E023BA6027EC447700198D36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E023BA6327EC447700198D36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E05B81A527F2294400FA5DC7 /* TBoxImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBoxImage.swift; sourceTree = "<group>"; };
+		E05B81A827F22AA500FA5DC7 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		E023BA5B27EC447600198D36 /* stacks_personal_card */ = {
 			isa = PBXGroup;
 			children = (
+				E05B81A427F2291800FA5DC7 /* Views */,
 				E023BA5C27EC447600198D36 /* stacks_personal_cardApp.swift */,
 				E023BA5E27EC447600198D36 /* ContentView.swift */,
 				E023BA6027EC447700198D36 /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				E023BA6327EC447700198D36 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E05B81A427F2291800FA5DC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E05B81A527F2294400FA5DC7 /* TBoxImage.swift */,
+				E05B81A827F22AA500FA5DC7 /* CircleImage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05B81A627F2294400FA5DC7 /* TBoxImage.swift in Sources */,
+				E05B81A927F22AA500FA5DC7 /* CircleImage.swift in Sources */,
 				E023BA5F27EC447600198D36 /* ContentView.swift in Sources */,
 				E023BA5D27EC447600198D36 /* stacks_personal_cardApp.swift in Sources */,
 			);
