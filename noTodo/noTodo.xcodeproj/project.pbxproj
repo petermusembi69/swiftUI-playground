@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E054621C27F3FD82003F1FB4 /* NoDoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054621B27F3FD82003F1FB4 /* NoDoRow.swift */; };
 		E0B57B3127F27E1800111D07 /* noTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B57B3027F27E1800111D07 /* noTodoApp.swift */; };
 		E0B57B3327F27E1800111D07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B57B3227F27E1800111D07 /* ContentView.swift */; };
 		E0B57B3527F27E1800111D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B57B3427F27E1800111D07 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E054621B27F3FD82003F1FB4 /* NoDoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDoRow.swift; sourceTree = "<group>"; };
 		E0B57B2D27F27E1800111D07 /* noTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B57B3027F27E1800111D07 /* noTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noTodoApp.swift; sourceTree = "<group>"; };
 		E0B57B3227F27E1800111D07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E054621A27F3FD5C003F1FB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E054621B27F3FD82003F1FB4 /* NoDoRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E0B57B2427F27E1700111D07 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		E0B57B2F27F27E1800111D07 /* noTodo */ = {
 			isa = PBXGroup;
 			children = (
+				E054621A27F3FD5C003F1FB4 /* View */,
 				E0B57B3027F27E1800111D07 /* noTodoApp.swift */,
 				E0B57B3227F27E1800111D07 /* ContentView.swift */,
 				E0B57B3427F27E1800111D07 /* Assets.xcassets */,
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E054621C27F3FD82003F1FB4 /* NoDoRow.swift in Sources */,
 				E0B57B3327F27E1800111D07 /* ContentView.swift in Sources */,
 				E0B57B3127F27E1800111D07 /* noTodoApp.swift in Sources */,
 			);
