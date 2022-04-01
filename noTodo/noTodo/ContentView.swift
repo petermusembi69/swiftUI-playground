@@ -70,7 +70,7 @@ struct ContentView: View {
         
         guard let index = Array(offsets).first else {return}
         self.nodoList.remove(at: index)
-        
+        save(nodoList: self.nodoList)
         
     }
     func timeAgoSinceDate(_ date:Date, numericDates:Bool = false) -> String {
