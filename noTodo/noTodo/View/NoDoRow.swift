@@ -9,27 +9,27 @@ import SwiftUI
 
 
 struct NoDoRow: View {
-    @State var nodoItem: String = ""
-    @State var isDone: Bool = false
-    @State var timeAgo: String
+    @State var nodoValue: Nodo
+    @State var nodoList: [Nodo]
+    
     
     var body: some View {
         VStack(alignment: .center, spacing:2) {
             Group {
                 HStack {
-                    Text(nodoItem)
+                    Text(nodoValue.name)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
                         .lineLimit(2)
                     Spacer()
                     Image(systemName:
-                            self.isDone ? "checkmark" :
+                            nodoValue.isDone ? "checkmark" :
                             "square").padding()
                 }
                 
                 HStack(alignment: .center, spacing: 3) {
                     Spacer()
-                    Text("Added \(self.timeAgo)")
+                    Text("Added \(nodoValue.createdAt)")
                         .foregroundColor(.white)
                         .italic()
                         .padding(.all,4)
@@ -37,11 +37,15 @@ struct NoDoRow: View {
                 
             }.padding(.all,4)
         }.background(
-            self.isDone ? Color.gray :
+            nodoValue.isDone  ? Color.gray :
             Color.pink)
             .clipShape(RoundedRectangle(cornerRadius: 5))
             .onTapGesture {
-                self.isDone.toggle()
+                
+                let index = self.nodoList.firstIndex(of: nodoValue)
+                self.nodoValue.isDone.toggle()
+                self.nodoList[index ?? 0] = self.nodoValue
+                save(nodoList: self.nodoList)
             }
     }
   

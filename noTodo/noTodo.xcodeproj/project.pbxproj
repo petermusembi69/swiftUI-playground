@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E054621C27F3FD82003F1FB4 /* NoDoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E054621B27F3FD82003F1FB4 /* NoDoRow.swift */; };
+		E0784E9E27F6A61A0083F698 /* Nodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0784E9D27F6A61A0083F698 /* Nodo.swift */; };
+		E0784EA127F6B6DD0083F698 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0784EA027F6B6DD0083F698 /* utils.swift */; };
 		E0B57B3127F27E1800111D07 /* noTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B57B3027F27E1800111D07 /* noTodoApp.swift */; };
 		E0B57B3327F27E1800111D07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B57B3227F27E1800111D07 /* ContentView.swift */; };
 		E0B57B3527F27E1800111D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B57B3427F27E1800111D07 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		E054621B27F3FD82003F1FB4 /* NoDoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDoRow.swift; sourceTree = "<group>"; };
+		E0784E9D27F6A61A0083F698 /* Nodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nodo.swift; sourceTree = "<group>"; };
+		E0784EA027F6B6DD0083F698 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		E0B57B2D27F27E1800111D07 /* noTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B57B3027F27E1800111D07 /* noTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noTodoApp.swift; sourceTree = "<group>"; };
 		E0B57B3227F27E1800111D07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +46,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E0784E9C27F6A6050083F698 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0784E9D27F6A61A0083F698 /* Nodo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0784E9F27F6B6BB0083F698 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				E0784EA027F6B6DD0083F698 /* utils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		E0B57B2427F27E1700111D07 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +81,8 @@
 		E0B57B2F27F27E1800111D07 /* noTodo */ = {
 			isa = PBXGroup;
 			children = (
+				E0784E9F27F6B6BB0083F698 /* utils */,
+				E0784E9C27F6A6050083F698 /* Model */,
 				E054621A27F3FD5C003F1FB4 /* View */,
 				E0B57B3027F27E1800111D07 /* noTodoApp.swift */,
 				E0B57B3227F27E1800111D07 /* ContentView.swift */,
@@ -148,7 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0784EA127F6B6DD0083F698 /* utils.swift in Sources */,
 				E054621C27F3FD82003F1FB4 /* NoDoRow.swift in Sources */,
+				E0784E9E27F6A61A0083F698 /* Nodo.swift in Sources */,
 				E0B57B3327F27E1800111D07 /* ContentView.swift in Sources */,
 				E0B57B3127F27E1800111D07 /* noTodoApp.swift in Sources */,
 			);

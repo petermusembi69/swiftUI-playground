@@ -9,8 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     @State var nodo: String = ""
-    @State var nodoList = [String]()
-    @State var timeAgo: String = ""
+    @State var nodoList: [Nodo] = { () -> [Nodo] in
+        guard var data =  UserDefaults.standard.data(forKey: "nodos") else {
+            return []
+        }
+        if let json = try? JSONDecoder().decode([Nodo].self, from: data){
+            return json
+        }
+        return []
+    }()
     
     var body: some View {
         NavigationView() {
@@ -21,9 +28,10 @@ struct ContentView: View {
                     
                     Group {
                         TextField("What will You NOT Do Today?", text: self.$nodo, onEditingChanged: {(changed) in }) {
-                            self.timeAgo = self.timeAgoSinceDate(Date())
-                            self.nodoList.insert(self.nodo, at: 0)
-                        
+                            	
+                            self.nodoList.insert(
+                                Nodo(name: self.nodo),at: 0)
+                            save(nodoList: self.nodoList)
                             self.nodo = ""
                         }.padding(.all, 12)
                     }.background(.green)
@@ -33,15 +41,30 @@ struct ContentView: View {
                     }
                 List() {
                     ForEach(self.nodoList, id: \.self) {
+                        
                         nodoValue in
-                    NoDoRow(nodoItem: nodoValue, timeAgo: self.timeAgo)
-                    }.onDelete(perform: deleteNoDoValue)
+                        NoDoRow(nodoValue: nodoValue, nodoList: self.nodoList)
+                    }
+                    .onDelete(perform: deleteNoDoValue)
                     
                 }
             }.navigationBarTitle("No Todo")
         }
     
     }
+    
+    
+    
+    func toggleIsDone(at offsets: IndexSet) {
+        
+        guard let index = Array(offsets).first else {return}
+        self.nodoList[index].isDone.toggle()
+        save(nodoList: self.nodoList)
+        
+        
+    }
+
+    
     
     func deleteNoDoValue(at offsets: IndexSet) {
         
