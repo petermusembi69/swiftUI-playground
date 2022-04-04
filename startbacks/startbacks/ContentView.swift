@@ -7,10 +7,31 @@
 
 import SwiftUI
 
+let data = [
+    Food(image: "muffinOne"),
+    Food(image: "bready"),
+    Food(image: "blueberry-muffin"),
+    Food(image: "cakepop"),
+    Food(image: "smokedBacon"),
+    Food(image: "raspberryChoco"),
+]
+
+
 struct ContentView: View {
+    @State var showTopCard: Bool = true
+    @State var foodData = data
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack(alignment: .topLeading) {
+            BackSplash()
+            TopView()
+            ZStack {
+                TopCard(showTopCard: self.$showTopCard, foodData: self.$foodData)
+              
+                BottomCard(showCard: self.$showTopCard)
+            }
+            
+        }
     }
 }
 
