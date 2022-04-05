@@ -11,6 +11,7 @@
 		E090357127FC5FC000D2DAC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090357027FC5FC000D2DAC2 /* ContentView.swift */; };
 		E090357327FC5FC200D2DAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E090357227FC5FC200D2DAC2 /* Assets.xcassets */; };
 		E090357627FC5FC200D2DAC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E090357527FC5FC200D2DAC2 /* Preview Assets.xcassets */; };
+		E090358327FC79C400D2DAC2 /* MainForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090358227FC79C400D2DAC2 /* MainForecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E090357027FC5FC000D2DAC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E090357227FC5FC200D2DAC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E090357527FC5FC200D2DAC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E090358227FC79C400D2DAC2 /* MainForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainForecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		E090357E27FC609200D2DAC2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E090358227FC79C400D2DAC2 /* MainForecast.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E090358327FC79C400D2DAC2 /* MainForecast.swift in Sources */,
 				E090357127FC5FC000D2DAC2 /* ContentView.swift in Sources */,
 				E090356F27FC5FC000D2DAC2 /* weather_forecastApp.swift in Sources */,
 			);
