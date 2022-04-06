@@ -8,10 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+    @State var showView: Bool = false
+    @ObservedObject var forecastViewModel: ForecastViewModel
+    
+    init() {
+        self.forecastViewModel = ForecastViewModel()
     }
+    
+    var body: some View {
+        ZStack {
+            BackSplash()
+            
+            VStack {
+                TopView(
+                    showField: self.showView, forecastViewModel:self.forecastViewModel)
+                
+                MidView(forecastViewModel: self.forecastViewModel)
+            }
+            
+            VStack(alignment: .center, spacing: 8) {
+                Image(systemName: Helper().showWeatherIcon(item: self.forecastViewModel.weatherForcast))
+                    .resizable()
+                    .frame(width: 200, height: 200, alignment: .center)
+                    .foregroundColor(.white)
+                
+                
+                CurrentTempView(forecastViewModel: self.forecastViewModel)
+            }
+        }
+    }
+   
 }
 
 struct ContentView_Previews: PreviewProvider {

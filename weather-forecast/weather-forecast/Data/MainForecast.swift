@@ -10,20 +10,14 @@ import SwiftUI
 
 class MainForecastResponse: Decodable {
     var cod: Int?
-    var coor: Coordinates
-    var sys: Sys
-    var main: Main
-    var dt: Int
-    var weather: Weather
-    var clouds: Clouds
-    var wind: Wind
+    var name: String?
+    var coord: Coordinates?
+    var sys: Sys?
+    var main: Main?
+    var weather: [Weather?]
+    var clouds: Clouds?
 }
 
-class Wind: Decodable {
-    var speed: Double
-    var deg: Int
-    var gust: Double
-}
 
 class Clouds: Decodable {
     var all: Int
